@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "recipe-finder",
+    "name": "Recipe Finder",
     "slug": "recipe-finder",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,6 +20,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "scheme": "recipe-finder",
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
