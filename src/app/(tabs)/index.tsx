@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { ActivityIndicator, StyleSheet, TextInput, View } from "react-native";
+import { StyleSheet, TextInput, View } from "react-native";
+import { Loader } from "@/components/Loader";
 import { RecipeList } from "@/components/RecipeList";
 import { colors } from "@/constants/theme";
 import { Meal, searchMeals } from "@/services/api";
@@ -35,7 +36,7 @@ export default function SearchScreen() {
         returnKeyType="search"
       />
       {loading ? (
-        <ActivityIndicator size="large" color={colors.primary} style={{ marginTop: 40 }} />
+        <Loader />
       ) : (
         <RecipeList meals={meals} emptyText="No recipes found" />
       )}

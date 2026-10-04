@@ -25,3 +25,15 @@ export async function getMeal(id: string) {
   const meals = await fetchMeals(`lookup.php?i=${id}`);
   return meals[0];
 }
+
+export function getIngredients(meal: Meal) {
+  const ingredients: string[] = [];
+
+  for (let i = 1; i <= 20; i++) {
+    const name = meal[`strIngredient${i}`];
+    const measure = meal[`strMeasure${i}`] ?? "";
+    if (name) ingredients.push(`${measure} ${name}`.trim());
+  }
+
+  return ingredients;
+}
