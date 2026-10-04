@@ -1,8 +1,12 @@
-import { useLocalSearchParams } from 'expo-router';
-import { EmptyState } from '@/components/EmptyState';
+import { useLocalSearchParams } from "expo-router";
+import { Text, View } from "react-native";
 
 export default function RecipeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
 
-  return <EmptyState icon="restaurant-outline" title="Recipe" message={`Recipe id: ${id}`} />;
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Recipe {id}</Text>
+    </View>
+  );
 }

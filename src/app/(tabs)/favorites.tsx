@@ -1,5 +1,5 @@
-import { EmptyState } from '@/components/EmptyState';
+import { RecipeList } from "@/components/RecipeList";
 
 export default function FavoritesScreen() {
-  return <EmptyState icon="heart-outline" title="No favorites yet" message="Recipes you save will show up here." />;
+  return <RecipeList meals={[]} emptyText="No favorites yet" />;
 }
