@@ -2,7 +2,7 @@
 
 ## Beskrivning
 
-Recipe Finder är en receptapp byggd med React Native, Expo och TypeScript. Du kan söka bland hundratals recept, se ingredienser och instruktioner, kopiera ingredienslistan till exempelvis en inköpslista, titta på receptets video och spara dina favoriter.
+Recipe Finder är en receptapp byggd med React Native, Expo och TypeScript. Du kan söka efter recept på namn, se ingredienser och instruktioner, kopiera ingredienslistan till exempelvis en inköpslista, titta på receptets video och spara dina favoriter.
 
 Appen är för alla som vill hitta något att laga snabbt och ha sina favoritrecept samlade på ett ställe. Recepten hämtas från det öppna API:t [TheMealDB](https://www.themealdb.com/api.php).
 
